@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-android-plugin-allow-backup"
+        version="0.0.1">
+
+    <name>AllowBackup</name>
+
+    <description>AllowBackup</description>
+
+    <repo>https://github.com/AlexandrSalin/cordova-android-plugin-allow-backup.git</repo>
+
+    <keywords>allowbackup</keywords>
+
+    <license>Apache 2.0</license>
+
+    <author>Alexandr Salin</author>
+
+    <!-- cordova -->
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+        <engine name="android-sdk" version=">=16" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <preference name="android-manifest/application/@android:allowBackup" value="false" />
+    </platform>
+
+</plugin>
