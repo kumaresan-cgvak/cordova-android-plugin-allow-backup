@@ -29,7 +29,8 @@
 
     <!-- android -->
     <platform name="android">
-        <preference name="android-manifest/application/@android:allowBackup" value="false" />
+       <!-- <preference name="android-manifest/application/@android:allowBackup" value="false" /> -->
+       <hook type="before_plugin_install" src="hooks/androidBeforeInstall.js" />
     </platform>
 
 </plugin>
