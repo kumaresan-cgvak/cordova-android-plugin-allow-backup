@@ -18,7 +18,7 @@ module.exports = function(context) {
       }
       var appClass = ' android:allowBackup="true" ';
       if (data.indexOf(appClass) == -1) {
-        var result = data.replace(/<application/g, '<application ' + appClass + );
+        var result = data.replace(/<application/g, '<application ' + appClass);
         fs.writeFile(manifestFile, result, 'utf8', function (err) {
           if (err) throw new Error('Unable to write into AndroidManifest.xml: ' + err);
         })
