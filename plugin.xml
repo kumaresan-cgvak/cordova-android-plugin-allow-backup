@@ -20,12 +20,11 @@
     <!-- cordova -->
     <engines>
         <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=16" />
     </engines>
 
     <!-- android -->
     <platform name="android">
-       <hook type="after_plugin_install" src="hooks/androidBeforeInstall.js" />
+       <hook type="after_prepare" src="hooks/androidBeforeInstall.js" />
     </platform>
 
 </plugin>
