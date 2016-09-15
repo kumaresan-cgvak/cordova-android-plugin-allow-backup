@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 module.exports = function(context) {
-
+  throw new Error('Check AllowBacup plugin start work');
   var fs = context.requireCordovaModule('fs'),
     path = context.requireCordovaModule('path');
 
