@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-android-plugin-allow-backup"
-        version="0.1.8">
+        version="0.1.9">
 
     <name>DisableAllowBackup</name>
 
@@ -25,6 +25,7 @@
     <!-- android -->
     <platform name="android">
        <hook type="before_plugin_install" src="hooks/androidBeforeInstall.js" />
+       <config-file parent="/*" target="AndroidManifest.xml"></config-file>
     </platform>
 
 </plugin>
