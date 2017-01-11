@@ -10,6 +10,7 @@ module.exports = function(ctx) {
  }
 
  doc.getroot().find('./application').attrib['android:allowBackup'] = "false";
+ doc.getroot().find('./application').attrib['tools:replace'] = "android:allowBackup";
 
  //write the manifest file
  fs.writeFileSync(manifestPath, doc.write({
